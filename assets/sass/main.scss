@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+
+}
+
+.navbar{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+
+    h1{
+        color: black;
+        margin: 10px;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    li{
+        color: #4d4e53;
+        border-top: 1px solid;
+        list-style: none;
+        position: relative;
+        width: 100%;
+
+        a{
+            display: block;
+            padding: 10px 30px;
+            color: #4d4e53;
+            text-decoration: none;
+            font-size: 1.5rem;
+
+            &:hover{
+                color: #4d4e53;
+            }
+        }
+    }
+}
+
+
+.main{
+    margin:0 0 110px 310px;
+    padding: 20px;
+
+    .main-item{
+        h3{
+            color: #000;
+            font-size: 3rem;
+        }
+    }
+
+    .content{
+        color: #4d4e53;
+        margin: 15px;
+        font-size: 1.5rem;
+        
+        ul{
+            padding-left: 40px;
+        }
+
+        code{
+            margin: 10px;
+            padding: 15px;
+            display: block;
+            color: #a09b99;
+            background-color: #f7f7f7;
+            border-radius: 5px;
+        }
+
+        a{
+            &:visited{
+                color: #551A8B;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 815px) {
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        z-index: 1;
+        position: relative;
+        height: 300px;
+        margin: 0;
+        padding: 0;
+
+        h1{
+            display: block;
+            justify-content: center;
+            flex: 1;
+            height: 50px;
+
+        }
+        ul{
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            padding-left: 0;
+            width: 100%;
+            overflow-y: scroll;
+            height: 250px;
+        }
+
+    }
+
+    .main{
+        margin: 10px 0 0 0 ;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .main{
+      margin-left: -10px;
+    }
+  
+    code {
+      margin-left: -20px;
+      width: 100%;
+      padding: 15px;
+      padding-left: 10px;
+      padding-right: 45px;
+      min-width: 233px;
+    }
+  }
